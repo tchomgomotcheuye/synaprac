@@ -38,6 +38,15 @@ const config: Config = {
         organic: "6px 22px 6px 22px",
         "organic-lg": "6px 40px 6px 40px",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        marquee: "marquee 28s linear infinite",
+      },
     },
   },
   plugins: [],
