@@ -1,22 +1,25 @@
-const HISTORY = [
+import {useTranslations} from "next-intl";
+
+
+export function Timeline() {
+  const t = useTranslations("LeSyndicat.timeline");
+  const HISTORY = [
   {
-    year: "2016",
-    title: "Naissance du mouvement",
-    text: "Des professionnels de l'assainissement se rassemblent pour porter une voix commune.",
+    year: "2021",
+    title: t("2021.title"),
+    text: t("2021.text"),
   },
   {
-    year: "2022",
-    title: "Reconnaissance institutionnelle",
-    text: "Premiers partenariats avec les collectivités territoriales.",
+    year: "2025",
+    title: t("2025.title"),
+    text: t("2025.text"),
   },
   {
     year: "2026",
-    title: "Le SYNAPROC aujourd'hui",
-    text: "Un syndicat national autonome à présence numérique renforcée.",
+    title: t("2026.title"),
+    text: t("2026.text"),
   },
 ];
-
-export function Timeline() {
   return (
     <div className="relative pl-9">
       <div className="absolute left-2 top-1.5 bottom-1.5 w-px bg-line" />

@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "union": "The Union",
+    "activities": "Activities & News",
+    "contact": "Contact",
+    "join": "Join us",
+    "openMenu": "Open menu",
+    "organization": "National Autonomous Union of Sanitation Professionals"
+  },
+  "Footer": {
+    "description": "National Autonomous Union of Sanitation Professionals of Cameroon. Together for a cleaner Cameroon.",
+
+    "navigation": "Navigation",
+    "union": "The Union",
+    "activities": "Activities & News",
+    "gallery": "Gallery",
+    "contact": "Contact",
+
+    "resources": "Resources",
+    "join": "Join us",
+    "legal": "Legal notice",
+
+    "contactTitle": "Contact",
+    "location": "Yaounde, Cameroon",
+
+    "copyright": "© 2026 SYNAPRAC — All rights reserved",
+    "madeBy": "Website developed by André Michel"
+  },
+  "Hero": {
+    "badge": "National Autonomous Union",
+    "title": "Together for a cleaner and better-sanitized Cameroon.",
+    "description": "SYNAPRAC brings together and represents sanitation professionals in Cameroon: septic tank emptying, waste collection, waste treatment and environmental hygiene.",
+    "discover": "Discover our missions",
+    "contact": "Contact us"
+  },
+  "Presentation": {
+    "badge": "Presentation",
+    "title": "The voice of sanitation professionals",
+    "paragraph1": "SYNAPRAC brings together sanitation stakeholders around common objectives: professionalizing the sector, defending members' interests and improving people's living environment.",
+    "paragraph2": "Through field actions, training programs and institutional partnerships, the union works every day towards a more structured and recognized sector."
+  },
+  "Home": {
+    "Missions": {
+      "badge": "Our missions",
+      "title": "What drives us every day",
+
+      "representation": {
+        "title": "Representation",
+        "description": "Represent sanitation professionals before public institutions."
+      },
+
+      "professionalization": {
+        "title": "Professionalization",
+        "description": "Train and structure sanitation professions."
+      },
+
+      "environment": {
+        "title": "Environment",
+        "description": "Promote sustainable and responsible practices."
+      },
+
+      "partnerships": {
+        "title": "Partnerships",
+        "description": "Build partnerships with local authorities and businesses."
+      }
+    },
+    "Gallery": {
+      "badge": "Gallery",
+      "title": "Our field activities",
+      "description": "A glimpse of our work in the field.",
+
+      "previous": "Previous image",
+      "next": "Next image",
+      "goTo": "Go to image {number}",
+
+      "slides": {
+        "training": "Training",
+        "awareness": "Awareness campaign in Douala",
+        "field": "Field work",
+        "emptiers": "Vacuum truck operators training",
+        "partnership": "Municipal partnership"
+      }
+    },
+    "Partners": {
+    "badge": "Our partners",
+    "title": "They support us",
+    "description": "Institutions, companies and individuals supporting our activities.",
+    "visit": "Visit website"
+  },
+  "Cta": {
+    "title": "Do you work in the sanitation sector?",
+    "description": "Join a national network that defends your profession and supports your professional development.",
+    "primary": "Become a member",
+    "secondary": "Contact us"
+  }
+  },
+  "LeSyndicat": {
+    "hero": {
+      "crumb": "Home / The Union",
+      "title": "The Union",
+      "subtitle": "Our history, executive board and members — everything about SYNAPRAC in one place."
+    },
+
+    "timeline": {
+      "2021": {
+        "title": "Birth of the movement",
+        "text": "Identification, organization and training of stakeholders."
+      },
+      "2025": {
+        "title": "Institutional recognition",
+        "text": "Official creation and legalization of SYNAPRAC."
+      },
+      "2026": {
+        "title": "SYNAPRAC today",
+        "text": "A national autonomous union with a strengthened digital presence."
+      }
+    },
+
+    "tabs": {
+      "history": "History & Vision",
+      "bureau": "Executive Board",
+      "members": "Our Members"
+    },
+
+    "history": {
+      "badge": "Our history",
+      "title": "An organization created to unite sanitation professionals"
+    },
+
+    "cards": {
+      "visionTitle": "Our Vision",
+      "visionText": "Ensure the development of sanitation workers by defending their professional, economic, social and moral interests.",
+
+      "engagementTitle": "Our Commitment",
+      "engagementText": "Bring sanitation professionals together, strengthen their capacities and promote a structured and sustainable profession.",
+
+      "valuesTitle": "Our Values",
+      "valuesText": "Promote a healthy environment based on dignity, fairness, inclusion, safety and sustainability.",
+
+      "objectivesTitle": "Our Objectives",
+      "objectivesText": "Identify sector stakeholders, improve working conditions, develop skills and contribute to better waste management in Cameroon."
+    },
+
+    "bureau": {
+      "badge": "Governance",
+      "title": "The Executive Board",
+      "description": "The elected leaders who represent SYNAPRAC's voice and actions."
+    },
+
+    "members": {
+      "badge": "Our Members",
+      "title": "One sector, several professions",
+      "ctaTitle": "Do you represent one of these categories?",
+      "ctaText": "Join SYNAPRAC and benefit from a professional network and representation."
+    }
+  },
+   "ActivitiesNews": {
+    "navbar": "Activities & News",
+
+    "hero": {
+      "crumb": "Home / Activities & News",
+      "title": "Activities & News",
+      "subtitle": "Our field projects and the latest union news, all in one place."
+    },
+
+    "tabs": {
+      "activities": "Our Activities",
+      "news": "News"
+    },
+
+    "activities": {
+      "badge": "Our Activities",
+      "title": "Projects & Achievements"
+    },
+
+    "stats": {
+      "actions": "Activities Conducted",
+      "regions": "Regions Covered",
+      "trained": "Professionals Trained"
+    },
+
+    "news": {
+      "badge": "News",
+      "title": "Announcements & Events",
+      "label": "News",
+      "empty": "No news available at the moment."
+    },
+
+    "projects": {
+      "project1": {
+        "title": "Celebration of World Environment Day 2026 through community drain cleaning",
+        "meta": "Yaoundé, 2026"
+      },
+      "project2": {
+        "title": "Awareness Campaign and Tree Planting",
+        "meta": "Bertoua, May 2026"
+      },
+      "project3": {
+        "title": "Launch of the Just City Project",
+        "meta": "Bertoua, December 2024"
+      }
+    }
+  },
+  "Contact": {
+    "navbar": "Contact",
+
+    "hero": {
+      "crumb": "Home / Contact",
+      "title": "Contact Us",
+      "subtitle": "Have a question, a partnership proposal, or a membership request? Get in touch with us."
+    },
+
+    "details": {
+      "badge": "Contact Information",
+      "title": "Let's Stay in Touch",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "map": "Location Map"
+    },
+
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+
+      "namePlaceholder": "Your name",
+      "phonePlaceholder": "+237",
+      "emailPlaceholder": "your@email.com",
+      "subjectPlaceholder": "Message subject",
+      "messagePlaceholder": "Your message...",
+
+      "deliveryMethod": "Choose a delivery method",
+      "emailOption": "Email",
+      "bothOption": "Both",
+
+      "submit": "Send Message",
+      "success": "Thank you! Your message has been sent successfully."
+    }
+  }
+}

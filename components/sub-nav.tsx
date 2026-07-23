@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import {useTranslations} from "next-intl";
 
 type Tab = { id: string; label: string };
 
 export function SubNav({ tabs }: { tabs: Tab[] }) {
   const [active, setActive] = useState(tabs[0]?.id);
+  const t = useTranslations("LeSyndicat.tabs");
 
   useEffect(() => {
     const observer = new IntersectionObserver(

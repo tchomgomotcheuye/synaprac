@@ -1,4 +1,5 @@
 import { Building2, ExternalLink } from "lucide-react";
+import {useTranslations} from "next-intl";
 
 type Partner = {
   name: string;
@@ -9,15 +10,10 @@ type Partner = {
 // `url` est optionnel : s'il est présent, toute la carte devient cliquable
 // et redirige vers le site du partenaire dans un nouvel onglet.
 const PARTNERS: Partner[] = [
-  { name: "Mairie de Douala 3ᵉ", url: "https://douala3.cm" },
-  { name: "Ministère de l'Habitat et du Développement Urbain" },
-  { name: "GreenTech Cameroun", url: "https://greentech-cameroun.example" },
-  { name: "Fondation Terre Propre", url: "https://terrepropre.example" },
-  { name: "ONG Assainissement Plus" },
-  { name: "M. Jean Fotso — Partenaire individuel" },
+  { name: "Mairie de ville de Bertoua"},
+  { name: "Friedrich Ebert Stiftung", url: "https://www.fes.de" },
 ];
-
-function PartnerCard({ partner }: { partner: Partner }) {
+function PartnerCard({ partner, t }: { partner: Partner; t:any }) {
   const inner = (
     <>
       <div className="w-16 h-16 rounded-[16px_16px_16px_4px] bg-green-100 flex items-center justify-center mb-4">
@@ -29,11 +25,12 @@ function PartnerCard({ partner }: { partner: Partner }) {
       </h3>
       {partner.url && (
         <div className="flex items-center justify-center gap-1.5 mt-2.5 text-green-700 text-xs font-display font-medium">
-          Visiter le site <ExternalLink size={13} />
+          {t("visit")} <ExternalLink size={13} />
         </div>
       )}
     </>
   );
+  
 
   const baseClass =
     "h-full bg-white border border-line rounded-organic p-6 flex flex-col items-center text-center transition-all duration-300";
@@ -56,8 +53,11 @@ function PartnerCard({ partner }: { partner: Partner }) {
 }
 
 export function Partners() {
+
+  const t = useTranslations("Home.Partners");
   // On duplique la liste pour créer une boucle de défilement parfaitement continue.
   const loop = [...PARTNERS, ...PARTNERS];
+  
 
   return (
     <section className="py-16 lg:py-20 bg-green-100 overflow-hidden">
@@ -65,13 +65,13 @@ export function Partners() {
         <div className="text-center max-w-[640px] mx-auto mb-11">
           <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-600 mb-3.5">
             <span className="w-[18px] h-[2px] bg-amber-500" />
-            Nos partenaires
+            {t("badge")}
           </div>
           <h2 className="font-display font-bold text-green-900 text-[28px] lg:text-[32px] mb-3">
-            Ils nous accompagnent
+            {t("title")}
           </h2>
           <p className="text-gray-600 text-[15px]">
-            Institutions, entreprises et particuliers qui soutiennent nos actions.
+            {t("description")}
           </p>
         </div>
       </div>
@@ -90,7 +90,7 @@ export function Partners() {
           <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
             {loop.map((p, i) => (
               <div key={`${p.name}-${i}`} className="w-[190px] h-[168px] shrink-0">
-                <PartnerCard partner={p} />
+                <PartnerCard partner={p} t={t} />
               </div>
             ))}
           </div>

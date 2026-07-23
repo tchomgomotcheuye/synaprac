@@ -3,28 +3,29 @@
 import { motion } from "framer-motion";
 import { Shield, Award, Leaf, Handshake } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import {useTranslations} from "next-intl";
 
 const MISSIONS = [
   {
     icon: Shield,
-    title: "Représentation",
-    desc: "Défendre les intérêts des professionnels auprès des institutions.",
+    title: "representation.title",
+    desc: "representation.description"
   },
   {
     icon: Award,
-    title: "Professionnalisation",
-    desc: "Former et structurer les métiers de l'assainissement.",
+    title: "professionalization.title",
+    desc: "professionalization.description"
   },
   {
     icon: Leaf,
-    title: "Environnement",
-    desc: "Promouvoir des pratiques durables et responsables.",
+    title: "environment.title",
+    desc: "environment.description"
   },
   {
     icon: Handshake,
-    title: "Partenariats",
-    desc: "Construire des ponts avec collectivités et entreprises.",
-  },
+    title: "partnerships.title",
+    desc: "partnerships.description"
+  }
 ];
 
 const container = {
@@ -37,17 +38,20 @@ const item = {
   show: { opacity: 1, y: 0 },
 };
 
+
+
 export function Missions() {
+  const t = useTranslations("Home.Missions");
   return (
     <section className="py-16 lg:py-20 bg-green-100">
       <div className="max-w-[1240px] mx-auto px-6 lg:px-12">
         <div className="text-center max-w-[640px] mx-auto mb-11">
           <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-600 mb-3.5">
             <span className="w-[18px] h-[2px] bg-amber-500" />
-            Nos missions
+            {t("badge")}
           </div>
           <h2 className="font-display font-bold text-green-900 text-[28px] lg:text-[32px]">
-            Ce que nous portons au quotidien
+            {t("title")}
           </h2>
         </div>
 
@@ -65,9 +69,9 @@ export function Missions() {
                   <Icon className="text-green-700" size={24} strokeWidth={1.7} />
                 </div>
                 <h3 className="font-display font-semibold text-[18px] text-ink mb-2">
-                  {title}
+                  {t(title)}
                 </h3>
-                <p className="text-gray-600 text-[14.5px]">{desc}</p>
+                <p className="text-gray-600 text-[14.5px]">{t(desc)}</p>
               </Card>
             </motion.div>
           ))}

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 type CtaBandProps = {
   tone?: "green" | "brown";
@@ -17,13 +18,19 @@ type CtaBandProps = {
 
 export function CtaBand({
   tone = "green",
-  title = "Vous exercez dans l'assainissement ?",
-  text = "Rejoignez un réseau national qui défend votre métier et accompagne votre développement professionnel.",
-  primaryLabel = "Devenir membre",
-  secondaryLabel = "Nous contacter",
+  title,
+  text,
+  primaryLabel,
+  secondaryLabel,
   showSecondary = true,
   wrapped = true,
 }: CtaBandProps) {
+  const t = useTranslations("Home.Cta");
+
+  const finalTitle = title ?? t("title");
+  const finalText = text ?? t("description");
+  const finalPrimaryLabel = primaryLabel ?? t("primary");
+  const finalSecondaryLabel = secondaryLabel ?? t("secondary");
   const gradient =
     tone === "brown"
       ? "bg-gradient-to-br from-brown-900 to-brown-700"
@@ -38,16 +45,16 @@ export function CtaBand({
       className={`${gradient} text-white rounded-organic-lg px-6 sm:px-8 py-10 lg:py-14 text-center`}
     >
       <h2 className="font-display font-bold text-white text-[24px] lg:text-[27px] mb-3">
-        {title}
+        {finalTitle}
       </h2>
-      <p className="text-green-100/90 max-w-[520px] mx-auto mb-7">{text}</p>
+      <p className="text-green-100/90 max-w-[520px] mx-auto mb-7">{finalText}</p>
       <div className="flex justify-center flex-wrap gap-3.5">
         <Button variant="amber" size="lg">
-          {primaryLabel}
+          {finalPrimaryLabel}
         </Button>
         {showSecondary && (
           <Button variant="outline-light" size="lg">
-            {secondaryLabel}
+            {finalSecondaryLabel}
           </Button>
         )}
       </div>

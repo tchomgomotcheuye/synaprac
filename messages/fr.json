@@ -1,0 +1,244 @@
+{
+  "Navbar": {
+    "home": "Accueil",
+    "union": "Le Syndicat",
+    "activities": "Activités & Actualités",
+    "contact": "Contact",
+    "join": "Nous rejoindre",
+    "openMenu": "Ouvrir le menu",
+    "organization": "Syndicat National Autonome des Professionnels de l'Assainissement"
+  },
+  "Footer": {
+    "description": "Syndicat National Autonome des Professionnels de l'Assainissement du Cameroun. Ensemble pour un Cameroun plus propre.",
+
+    "navigation": "Navigation",
+    "union": "Le Syndicat",
+    "activities": "Activités & Actualités",
+    "gallery": "Galerie",
+    "contact": "Contact",
+
+    "resources": "Ressources",
+    "join": "Nous rejoindre",
+    "legal": "Mentions légales",
+
+    "contactTitle": "Contact",
+    "location": "Yaoundé, Cameroun",
+
+    "copyright": "© 2026 SYNAPRAC — Tous droits réservés",
+    "madeBy": "Site réalisé par André Michel"
+  },
+  "Hero": {
+    "badge": "Syndicat National Autonome",
+    "title": "Ensemble, pour un Cameroun plus propre et mieux assaini.",
+    "description": "Le SYNAPRAC fédère et représente les professionnels de l'assainissement du Cameroun : vidange, collecte, traitement des déchets et hygiène du cadre de vie.",
+    "discover": "Découvrir nos missions",
+    "contact": "Nous contacter"
+  },
+  "Presentation": {
+    "badge": "Présentation",
+    "title": "Le porte-voix des professionnels de l'assainissement",
+    "paragraph1": "Le SYNAPRAC réunit les acteurs de l'assainissement autour d'objectifs communs : professionnalisation du secteur, défense des intérêts des membres et amélioration du cadre de vie des populations.",
+    "paragraph2": "À travers ses actions de terrain, ses formations et ses partenariats institutionnels, le syndicat œuvre chaque jour pour un secteur plus structuré et reconnu."
+  },
+  "Home": {
+    "Missions": {
+      "badge": "Nos missions",
+      "title": "Ce que nous portons au quotidien",
+
+      "representation": {
+        "title": "Représentation",
+        "description": "Défendre les intérêts des professionnels auprès des institutions."
+      },
+
+      "professionalization": {
+        "title": "Professionnalisation",
+        "description": "Former et structurer les métiers de l'assainissement."
+      },
+
+      "environment": {
+        "title": "Environnement",
+        "description": "Promouvoir des pratiques durables et responsables."
+      },
+
+      "partnerships": {
+        "title": "Partenariats",
+        "description": "Construire des ponts avec collectivités et entreprises."
+      }
+    },
+    "Gallery": {
+      "badge": "En images",
+      "title": "Nos actions sur le terrain",
+      "description": "Un aperçu de nos activités — galerie complète accessible depuis cet aperçu.",
+
+      "previous": "Image précédente",
+      "next": "Image suivante",
+      "goTo": "Aller à l'image {number}",
+
+      "slides": {
+        "training": "Formation",
+        "awareness": "Sensibilisation à Douala",
+        "field": "Terrain",
+        "emptiers": "Formation des vidangeurs",
+        "partnership": "Partenariat communal"
+      }
+    },
+    "Partners": {
+    "badge": "Nos partenaires",
+    "title": "Ils nous accompagnent",
+    "description": "Institutions, entreprises et particuliers qui soutiennent nos actions.",
+    "visit": "Visiter le site"
+  },
+  "Cta": {
+    "title": "Vous exercez dans l'assainissement ?",
+    "description": "Rejoignez un réseau national qui défend votre métier et accompagne votre développement professionnel.",
+    "primary": "Devenir membre",
+    "secondary": "Nous contacter"
+  }
+  },
+  "LeSyndicat": {
+    "hero": {
+      "crumb": "Accueil / Le Syndicat",
+      "title": "Le Syndicat",
+      "subtitle": "Notre histoire, notre bureau exécutif et nos membres — l'essentiel du SYNAPRAC en un seul endroit."
+    },
+
+    "tabs": {
+      "history": "Histoire & vision",
+      "bureau": "Bureau exécutif",
+      "members": "Nos membres"
+    },
+
+    "timeline": {
+      "2021": {
+        "title": "Naissance du mouvement",
+        "text": "Identification, regroupement et formation des acteurs."
+      },
+      "2025": {
+        "title": "Reconnaissance institutionnelle",
+        "text": "Création officielle et légalisation du SYNAPRAC."
+      },
+      "2026": {
+        "title": "Le SYNAPRAC aujourd'hui",
+        "text": "Un syndicat national autonome à présence numérique renforcée."
+      }
+    },
+
+    "history": {
+      "badge": "Notre histoire",
+      "title": "Une organisation née pour unir les acteurs de l'assainissement"
+    },
+
+    "cards": {
+      "visionTitle": "Notre vision",
+      "visionText": "Veiller à l'épanouissement des travailleurs du secteur de l'assainissement en défendant leurs intérêts professionnels, économiques, sociaux et moraux.",
+
+      "engagementTitle": "Notre engagement",
+      "engagementText": "Rassembler les professionnels de l'assainissement, renforcer leurs capacités et promouvoir une profession structurée et durable.",
+
+      "valuesTitle": "Nos valeurs",
+      "valuesText": "Promouvoir un environnement sain fondé sur la dignité, l'équité, l'inclusion, la sécurité et la durabilité.",
+
+      "objectivesTitle": "Nos objectifs",
+      "objectivesText": "Identifier les acteurs du secteur, améliorer leurs conditions de travail, développer les compétences et contribuer à une meilleure gestion des déchets au Cameroun."
+    },
+
+    "bureau": {
+      "badge": "Gouvernance",
+      "title": "Le Bureau Exécutif",
+      "description": "Les responsables élus qui portent la voix et l'action du SYNAPRAC."
+    },
+
+    "members": {
+      "badge": "Nos membres",
+      "title": "Un secteur, plusieurs métiers",
+      "ctaTitle": "Vous représentez l'une de ces catégories ?",
+      "ctaText": "Adhérez au SYNAPRAC et bénéficiez d'un réseau et d'une représentation professionnelle."
+    }
+  },
+  "ActivitiesNews": {
+    "navbar": "Activités & Actualités",
+
+    "hero": {
+      "crumb": "Accueil / Activités & Actualités",
+      "title": "Activités & Actualités",
+      "subtitle": "Nos projets de terrain et les dernières nouvelles du syndicat, réunis en un seul endroit."
+    },
+
+    "tabs": {
+      "activities": "Nos activités",
+      "news": "Actualités"
+    },
+
+    "activities": {
+      "badge": "Nos activités",
+      "title": "Projets et réalisations"
+    },
+
+    "stats": {
+      "actions": "Actions menées",
+      "regions": "Régions couvertes",
+      "trained": "Professionnels formés"
+    },
+
+    "news": {
+      "badge": "Actualités",
+      "title": "Communiqués et événements",
+      "label": "Actualité",
+      "empty": "Aucune actualité disponible pour le moment."
+    },
+
+    "projects": {
+      "project1": {
+        "title": "Célébration de la journée mondiale de l'environnement 2026 à travers le nettoyage des drains dans la commune",
+        "meta": "Yaoundé, 2026"
+      },
+      "project2": {
+        "title": "Campagne de sensibilisation et plantation des arbres",
+        "meta": "Bertoua, Mai 2026"
+      },
+      "project3": {
+        "title": "Lancement du Projet Just City",
+        "meta": "Bertoua, Décembre 2024"
+      }
+    }
+  },
+  "Contact": {
+    "navbar": "Contact",
+
+    "hero": {
+      "crumb": "Accueil / Contact",
+      "title": "Contactez-nous",
+      "subtitle": "Une question, un projet de partenariat ou une demande d'adhésion ? Écrivez-nous."
+    },
+
+    "details": {
+      "badge": "Coordonnées",
+      "title": "Restons en contact",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "address": "Adresse",
+      "map": "Carte de localisation"
+    },
+
+    "form": {
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "subject": "Sujet",
+      "message": "Message",
+
+      "namePlaceholder": "Votre nom",
+      "phonePlaceholder": "+237",
+      "emailPlaceholder": "votre@email.com",
+      "subjectPlaceholder": "Objet de votre message",
+      "messagePlaceholder": "Votre message...",
+
+      "deliveryMethod": "Choisissez un mode d'envoi",
+      "emailOption": "E-mail",
+      "bothOption": "Les deux",
+
+      "submit": "Envoyer le message",
+      "success": "Merci, votre message a bien été envoyé !"
+    }
+  }
+}

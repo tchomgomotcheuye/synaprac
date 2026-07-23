@@ -3,15 +3,18 @@ import { Footer } from "@/components/footer";
 import { PageHero } from "@/components/page-hero";
 import { ContactDetails } from "@/components/contact-details";
 import { ContactForm } from "@/components/contact-form";
+import { getTranslations } from "next-intl/server";
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const t = await getTranslations("Contact");
   return (
     <>
-      <Navbar active="Contact" />
+      <Navbar active={t("navbar")} />
+
       <PageHero
-        crumb="Accueil / Contact"
-        title="Contactez-nous"
-        subtitle="Une question, un projet de partenariat ou une demande d'adhésion ? Écrivez-nous."
+        crumb={t("hero.crumb")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
 
       <main>

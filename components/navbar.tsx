@@ -5,16 +5,19 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import LanguageSwitcher from "@/components/language-switcher";
+import { useTranslations } from "next-intl";
 
 const LINKS = [
-  { label: "Accueil", href: "/" },
-  { label: "Le Syndicat", href: "/le-syndicat" },
-  { label: "Activités & Actualités", href: "/activites-actualites" },
-  { label: "Contact", href: "/contact" },
+  { key: "home", href: "/" },
+  { key: "union", href: "/le-syndicat" },
+  { key: "activities", href: "/activites-actualites" },
+  { key: "contact", href: "/contact" },
 ];
 
-export function Navbar({ active = "Accueil" }: { active?: string }) {
+export function Navbar({ active = "home" }: { active?: string }) {
   const [open, setOpen] = useState(false);
+  const t = useTranslations("Navbar");
 
   return (
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-line">
@@ -30,7 +33,7 @@ export function Navbar({ active = "Accueil" }: { active?: string }) {
           <div className="font-display font-extrabold text-green-900 leading-tight text-[19px]">
             SYNAPRAC
             <span className="block font-body font-normal text-[10.5px] text-gray-500 tracking-wide">
-              Syndicat National Autonome des Professionnels de l&apos;Assainissement
+              {t("organization")}
             </span>
           </div>
         </Link>
@@ -41,24 +44,25 @@ export function Navbar({ active = "Accueil" }: { active?: string }) {
               key={link.href}
               href={link.href}
               className={`relative font-display font-medium text-sm py-1 ${
-                link.label === active
+                link.key === active
                   ? "text-green-700 after:content-[''] after:absolute after:-bottom-1 after:left-0 after:right-0 after:h-[3px] after:rounded-full after:bg-amber-500"
                   : "text-ink hover:text-green-700"
               }`}
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
         </nav>
+        <LanguageSwitcher />
 
         <div className="hidden lg:block">
-          <Button variant="amber">Nous rejoindre</Button>
+          <Button variant="amber">{t("join")}</Button>
         </div>
 
         <button
           className="lg:hidden text-green-900"
           onClick={() => setOpen(!open)}
-          aria-label="Ouvrir le menu"
+          aria-label={t("openMenu")}
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -71,15 +75,15 @@ export function Navbar({ active = "Accueil" }: { active?: string }) {
               key={link.href}
               href={link.href}
               className={`font-display font-medium text-sm ${
-                link.label === active ? "text-green-700" : "text-ink"
+                link.key === active ? "text-green-700" : "text-ink"
               }`}
               onClick={() => setOpen(false)}
             >
-              {link.label}
+              {t(link.key)}
             </Link>
           ))}
           <Button variant="amber" className="w-full mt-2">
-            Nous rejoindre
+            {t("join")}
           </Button>
         </div>
       )}

@@ -2,8 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+  const t = useTranslations("Hero");
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-green-900 via-green-700 to-green-600 text-white">
       <div className="absolute -right-32 -top-32 w-[420px] h-[420px] rounded-full bg-white/[0.06]" />
@@ -18,36 +20,43 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-500 mb-4">
               <span className="w-[18px] h-[2px] bg-amber-500" />
-              Syndicat National Autonome
+              {t("badge")}
             </div>
             <h1 className="font-display font-bold text-[34px] sm:text-[42px] lg:text-[46px] leading-[1.08] mb-5">
-              Ensemble, pour un Cameroun plus propre et mieux assaini.
+              {t("title")}
             </h1>
             <p className="text-[17.5px] text-green-100/90 max-w-[520px] mb-8">
-              Le SYNAPROC fédère et représente les professionnels de l&apos;assainissement
-              du Cameroun&nbsp;: vidange, collecte, traitement des déchets et hygiène du
-              cadre de vie.
+              {t("description")}
             </p>
             <div className="flex flex-wrap gap-3.5">
               <Button variant="amber" size="lg">
-                Découvrir nos missions
+                {t("discover")}
               </Button>
               <Button variant="outline-light" size="lg">
-                Nous contacter
+                {t("contact")}
               </Button>
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.92 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeOut", delay: 0.15 }}
-            className="relative h-[280px] sm:h-[340px] rounded-blob bg-gradient-to-br from-amber-500 to-brown-700 flex items-end p-5"
-          >
-            <span className="font-display font-semibold text-[12px] uppercase tracking-wide text-white/85">
-              Nos équipes sur le terrain
-            </span>
-          </motion.div>
+  initial={{ opacity: 0, scale: 0.92 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 2.5, ease: "easeOut", delay: 0.15 }}
+  className="relative h-[280px] sm:h-[340px] rounded-blob overflow-hidden flex items-end p-5"
+>
+  <img
+    src="/hero.jpeg"
+    alt=""
+    className="absolute inset-0 w-full h-full object-cover"
+  />
+
+  {/* Overlay pour garder le texte lisible */}
+  <div className="absolute inset-0 bg-black/20" />
+
+  <span className="relative z-10 font-display font-semibold text-[12px] uppercase tracking-wide text-white/85">
+    
+  </span>
+</motion.div>
         </div>
       </div>
     </section>

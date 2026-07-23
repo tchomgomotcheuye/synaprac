@@ -5,20 +5,22 @@ import { SubNav } from "@/components/sub-nav";
 import { ProjectsGrid } from "@/components/projects-grid";
 import { StatsRow } from "@/components/stats-row";
 import { NewsGridCompact } from "@/components/news-grid-compact";
+import {getTranslations} from "next-intl/server";
 
-const TABS = [
-  { id: "activites", label: "Nos activités" },
-  { id: "actualites", label: "Actualités" },
-];
+export default async  function ActivitesActualitesPage() {
+  const t = await getTranslations("ActivitiesNews");
 
-export default function ActivitesActualitesPage() {
+  const TABS = [
+    { id: "activites", label: t("tabs.activities") },
+    { id: "actualites", label: t("tabs.news") },
+  ];
   return (
     <>
-      <Navbar active="Activités & Actualités" />
+      <Navbar active={t("navbar")} />
       <PageHero
-        crumb="Accueil / Activités & Actualités"
-        title="Activités & Actualités"
-        subtitle="Nos projets de terrain et les dernières nouvelles du syndicat, réunis en un seul endroit."
+        crumb={t("hero.crumb")}
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
       />
       <SubNav tabs={TABS} />
 
@@ -29,10 +31,10 @@ export default function ActivitesActualitesPage() {
             <div className="max-w-[640px] mb-11">
               <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-600 mb-3.5">
                 <span className="w-[18px] h-[2px] bg-amber-500" />
-                Nos activités
+                {t("activities.badge")}
               </div>
               <h2 className="font-display font-bold text-green-900 text-[28px] mb-3">
-                Projets et réalisations
+                {t("activities.title")}
               </h2>
             </div>
             <ProjectsGrid />
@@ -46,10 +48,10 @@ export default function ActivitesActualitesPage() {
             <div className="max-w-[640px] mb-11">
               <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-600 mb-3.5">
                 <span className="w-[18px] h-[2px] bg-amber-500" />
-                Actualités
+                {t("news.badge")}
               </div>
               <h2 className="font-display font-bold text-green-900 text-[28px] mb-3">
-                Communiqués et événements
+                {t("news.title")}
               </h2>
             </div>
             <NewsGridCompact />

@@ -1,20 +1,21 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-
-const DETAILS = [
-  { icon: Phone, label: "Téléphone", value: "+237 6xx xx xx xx" },
-  { icon: Mail, label: "E-mail", value: "contact@synaproc.cm" },
-  { icon: MapPin, label: "Adresse", value: "Yaoundé, Cameroun" },
-];
+import { useTranslations } from "next-intl";
 
 export function ContactDetails() {
+   const t = useTranslations("Contact.details");
+   const DETAILS = [
+    { icon: Phone, label: t("phone"), value: "+237 6xx xx xx xx" },
+    { icon: Mail, label: t("email"), value: "contact@synaproc.cm" },
+    { icon: MapPin, label: t("address"), value: "Yaoundé, Cameroun" },
+  ];
   return (
     <div>
       <div className="inline-flex items-center gap-2 font-display font-semibold text-[12.5px] tracking-[.14em] uppercase text-amber-600 mb-3.5">
         <span className="w-[18px] h-[2px] bg-amber-500" />
-        Coordonnées
+        {t("badge")}
       </div>
       <h2 className="font-display font-bold text-green-900 text-[26px] mb-7">
-        Restons en contact
+        {t("title")}
       </h2>
 
       <div className="flex flex-col gap-6 mb-8">
@@ -41,7 +42,7 @@ export function ContactDetails() {
         }}
       >
         <span className="font-display text-[12px] uppercase tracking-wide text-gray-600">
-          Carte de localisation
+          {t("map")}
         </span>
       </div>
     </div>

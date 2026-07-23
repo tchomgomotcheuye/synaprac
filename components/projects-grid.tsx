@@ -1,36 +1,55 @@
-const PROJECTS = [
-  {
-    title: "Campagne de sensibilisation",
-    meta: "Douala, 2026",
-    gradient: "from-green-600 to-brown-700",
-  },
-  {
-    title: "Formation des vidangeurs",
-    meta: "Yaoundé, 2026",
-    gradient: "from-amber-500 to-green-600",
-  },
-  {
-    title: "Partenariat communal",
-    meta: "Bafoussam, 2025",
-    gradient: "from-brown-700 to-green-900",
-  },
-];
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export function ProjectsGrid() {
+  const t = useTranslations("ActivitiesNews.projects");
+  const PROJECTS = [
+  {
+    title: t("project1.title"),
+    meta: t("project1.meta"),
+    image: "/hero.jpeg",
+  },
+  {
+    title: t("project2.title"),
+    meta: t("project2.meta"),
+    image: "/galery1.jpg",
+  },
+  {
+    title: t("project3.title"),
+    meta: t("project3.meta"),
+    image: "/galery3.jpg",
+  },
+];
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
       {PROJECTS.map((p) => (
-        <a key={p.title} href="#" className="block group">
-          <div
-            className={`h-[170px] rounded-organic bg-gradient-to-br ${p.gradient} mb-4 transition-transform duration-300 group-hover:scale-[1.02]`}
-          />
-          <div className="font-display font-semibold text-[11.5px] uppercase tracking-wide text-gray-500 mb-2">
-            {p.meta}
+        <div key={p.title} className="group">
+          
+          <div className="group relative h-[250px] rounded-organic overflow-hidden">
+
+            <Image
+              src={p.image}
+              alt={p.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+            <div className="absolute bottom-5 left-5 text-white">
+              <p className="text-xs uppercase tracking-wide text-white/70">
+                {p.meta}
+              </p>
+
+              <h3 className="font-display font-semibold text-lg">
+                {p.title}
+              </h3>
+            </div>
+
           </div>
-          <h3 className="font-display font-semibold text-[16.5px] text-ink group-hover:text-green-700 transition-colors">
-            {p.title}
-          </h3>
-        </a>
+
+
+        </div>
       ))}
     </div>
   );
