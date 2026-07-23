@@ -51,7 +51,7 @@ export function GalleryCarousel() {
           <div className="hidden sm:block relative w-[220px] h-[230px] shrink-0 rounded-organic-lg overflow-hidden opacity-50">
             <Image
               src={getSlide(-1).image}
-              alt={getSlide(-1).label}
+              alt={t(`slides.${getSlide(-1).key}`)}
               fill
               className="object-cover"
             />
@@ -69,7 +69,7 @@ export function GalleryCarousel() {
               >
                 <Image
                   src={getSlide(0).image}
-                  alt={getSlide(0).label}
+                  alt={t(`slides.${getSlide(0).key}`)}
                   fill
                   className="object-cover"
                 />
@@ -77,7 +77,7 @@ export function GalleryCarousel() {
                 <div className="absolute inset-0 bg-black/20" />
 
                 <span className="relative z-10 font-display font-semibold text-[11.5px] uppercase tracking-wide text-white bg-black/20 px-3 py-1.5 rounded-full">
-                  {getSlide(0).label}
+                  {t(`slides.${getSlide(0).key}`)}
                 </span>
               </motion.div>
             </AnimatePresence>
@@ -86,7 +86,7 @@ export function GalleryCarousel() {
           <div className="hidden sm:block relative w-[220px] h-[230px] shrink-0 rounded-organic-lg overflow-hidden opacity-50">
             <Image
               src={getSlide(1).image}
-              alt={getSlide(1).label}
+              alt={t(`slides.${getSlide(1).key}`)}
               fill
               className="object-cover"
             />
