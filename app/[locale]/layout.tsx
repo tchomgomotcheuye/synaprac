@@ -8,6 +8,27 @@ export const metadata: Metadata = {
     "SYNAPRAC — Syndicat National Autonome des Professionnels de l'Assainissement du Cameroun",
   description:
     "Le SYNAPRAC fédère et représente les professionnels de l'assainissement du Cameroun.",
+
+  icons: {
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
+
+  openGraph: {
+    title:
+      "SYNAPRAC — Syndicat National Autonome des Professionnels de l'Assainissement du Cameroun",
+    description:
+      "Le SYNAPRAC fédère et représente les professionnels de l'assainissement du Cameroun.",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 512,
+        height: 512,
+        alt: "Logo SYNAPRAC",
+      },
+    ],
+  },
 };
 
 export default async function LocaleLayout({
