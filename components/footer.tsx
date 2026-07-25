@@ -78,7 +78,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  +237 697 808 239
+                  Whatsapp: +237 697 808 239
                 </a>
               </li>
 
@@ -89,7 +89,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  +237 674 439 332
+                  Whatsapp: +237 674 439 332
                 </a>
               </li>
 
