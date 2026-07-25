@@ -163,7 +163,7 @@ export default async function LeSyndicatPage() {
           </div>
         </section>
 
-        {/* ---- Bureau exécutif ---- */}
+        {/* ---- Bureau exécutif ---- 
         <section
           id="bureau"
           className="scroll-mt-[150px] py-16 lg:py-20 bg-green-100"
@@ -183,7 +183,7 @@ export default async function LeSyndicatPage() {
             </div>
             <TeamGrid />
           </div>
-        </section>
+        </section>*/}
 
         {/* ---- Nos membres ---- */}
         <section id="membres" className="scroll-mt-[150px] py-16 lg:py-20">

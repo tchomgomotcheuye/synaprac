@@ -4,6 +4,14 @@ import Link from "next/link";
 import { Facebook, Linkedin, AtSign } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+const SOCIALS = [
+  {
+    icon: Facebook,
+    href: "https://www.facebook.com/nom-de-la-page",
+    label: "Facebook",
+  }
+];
+
 export function Footer() {
   const t = useTranslations("Footer");
   return (
@@ -17,14 +25,19 @@ export function Footer() {
             <p className="text-[#D8CDBB] text-sm max-w-[280px] mb-4">
                {t("description")}
             </p>
+
             <div className="flex gap-2.5">
-              {[Facebook, Linkedin, AtSign].map((Icon, i) => (
-                <span
-                  key={i}
-                  className="w-[34px] h-[34px] rounded-full bg-white/[0.08] flex items-center justify-center"
+              {SOCIALS.map(({ icon: Icon, href, label }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="w-[34px] h-[34px] rounded-full bg-white/10 flex items-center justify-center hover:bg-green-700 transition-colors duration-300"
                 >
                   <Icon size={15} className="text-[#EFE7DA]" />
-                </span>
+                </a>
               ))}
             </div>
           </div>
@@ -94,7 +107,7 @@ export function Footer() {
                   href="mailto:contact@synaprac.cm"
                   className="hover:text-white transition-colors"
                 >
-                  contact@synaprac.cm
+                  synaprac@synaprac.org
                 </a>
               </li>
             </ul>

@@ -8,10 +8,10 @@ import { useTranslations } from "next-intl";
 
 const SLIDES = [
   { key: "training", image: "/galery1.jpg", },
-  { key: "Awareness campaign in Douala", image: "/galery2.jpg", },
-  { key: "Field work", image: "/galery3.jpg", },
-  { key: "Vacuum truck operators training", image: "/galery4.jpg", },
-  { key: "Municipal partnership", image: "/galery5.jpg", },
+  { key: "awareness", image: "/galery2.jpg", },
+  { key: "field", image: "/galery3.jpg", },
+  { key: "emptiers", image: "/galery4.jpg", },
+  { key: "partnership", image: "/galery5.jpg", },
 ];
 
 export function GalleryCarousel() {

@@ -4,8 +4,8 @@ import { useTranslations } from "next-intl";
 export function ContactDetails() {
    const t = useTranslations("Contact.details");
    const DETAILS = [
-    { icon: Phone, label: t("phone"), value: "+237 6xx xx xx xx" },
-    { icon: Mail, label: t("email"), value: "contact@synaproc.cm" },
+    { icon: Phone, label: t("phone"), value: "+237 697 808 239" },
+    { icon: Mail, label: t("email"), value: "synaprac@synaprac.org" },
     { icon: MapPin, label: t("address"), value: "Yaoundé, Cameroun" },
   ];
   return (

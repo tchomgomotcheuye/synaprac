@@ -34,36 +34,10 @@ export function ContactForm() {
 
       try {
         switch (method) {
-          case "email":
-            await fetch("/api/contact", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(form),
-            });
-            break;
 
           case "whatsapp":
             window.open(
-              `https://wa.me/237689139922?text=${encodeURIComponent(
-                whatsappMessage
-              )}`,
-              "_blank"
-            );
-            break;
-
-          case "both":
-            await fetch("/api/contact", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(form),
-            });
-
-            window.open(
-              `https://wa.me/237689139922?text=${encodeURIComponent(
+              `https://wa.me/+237689139922?text=${encodeURIComponent(
                 whatsappMessage
               )}`,
               "_blank"
@@ -159,30 +133,7 @@ export function ContactForm() {
       </div>
 
       <div className="mb-6">
-        <p className="font-display font-semibold text-[13px] text-ink mb-3">
-          {t("deliveryMethod")}
-        </p>
-
-        <div className="grid grid-cols-3 gap-3">
-
-          <button
-            type="button"
-            onClick={() => setMethod("email")}
-            className={`rounded-xl border p-4 transition-all ${
-              method === "email"
-                ? "border-green-700 bg-green-50"
-                : "border-line hover:border-green-400"
-            }`}
-          >
-            <Mail
-              className="mx-auto mb-2 text-green-700"
-              size={22}
-            />
-
-            <p className="text-sm font-display font-semibold">
-              {t("emailOption")}
-            </p>
-          </button>
+        <div className="flex justify-center">
 
           <button
             type="button"
@@ -203,31 +154,8 @@ export function ContactForm() {
             </p>
           </button>
 
-          <button
-            type="button"
-            onClick={() => setMethod("both")}
-            className={`rounded-xl border p-4 transition-all ${
-              method === "both"
-                ? "border-green-700 bg-green-50"
-                : "border-line hover:border-green-400"
-            }`}
-          >
-            <Send
-              className="mx-auto mb-2 text-green-700"
-              size={22}
-            />
-
-            <p className="text-sm font-display font-semibold">
-              {t("bothOption")}
-            </p>
-          </button>
-
         </div>
       </div>
-
-      <Button type="submit" className="w-full" size="lg">
-        {t("submit")}
-      </Button>
 
       {sent && (
         <p className="text-green-700 text-sm mt-3.5 text-center">
